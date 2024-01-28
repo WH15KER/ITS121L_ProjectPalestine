@@ -32,7 +32,6 @@ header{
   z-index: 1000;
   width: 100%;
   background: linear-gradient(to left, #f8dcef,#f7e4db);
-  border-bottom: #f8dcef 10px solid ;
   padding: 27px 17%;
   display: flex;
   align-items: center;
@@ -60,8 +59,8 @@ header{
 }
 
 .pic_logo img:hover{
-  filter: brightness(100%) hue-rotate(1deg);
-  transform: scale(1.01);
+  filter: brightness(100%);
+  transform: scale(1.1);
   cursor: pointer;
 }
 
