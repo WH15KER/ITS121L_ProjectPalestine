@@ -3,11 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gia's Kitchnette</title>
 
+  <!--Custom js links-->
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!--Custom css links-->
-  <link rel="stylesheet" type="text/css" href="contactus.css">
+  <link rel="stylesheet" type="text/css" href="aboutus.css">
     
   <!--Custom box and icon links-->
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -19,17 +23,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
-<!--Header Design-->
-<header class="sticky">
-  <div class="web-logo">
-    <a href="home.html" class="pic_logo" src="background_logo2.png">
-      <img src="background_logo2.png">
-    <a href="home.html" class="logo">Gia's<span>Kitchnette</span></a>
-  </a> 
-  <ul class="navbar">
-  </div>
-</header>
-  <nav>
+<!--Header Design start-->
+<header>
+    <a href="home.html" class="logo"><img src="background_logo2.png" class="pic-logo">Gia's<span>Kitchnette</span></a>
+  <nav class="navbar">
     <ul>
       <li class="dropdown">
         <button>About ▼</button>
@@ -61,15 +58,105 @@
           </li>
       </ul>
   </nav>
-  <div class="h-right">
-    <a href="#">Follow Us</a>
+  <div class="icons">
+    <a href="#"></a>
+    <a href="#"><i class="fas fa-search" id="search-icon"></i></a>
     <a href="#"><i class="ri-facebook-fill"></i></a>
     <a href="#"><i class="ri-instagram-line"></i></a>
     <a href="#"><i class="ri-twitter-line"></i></a>
-    <div class="bx bx-menu" id="menu-icon"></div>
+    <a href="#"><i class="fas fa-bars" id="menu-bars"></i></a>
 </div>
 </header>
+<!--Header Design end-->
 
-  
+<!--about section start-->
+<section class="about" id="about">
+  <h3 class="sub-heading">about us</h3>
+  <h1 class="heading">why choose us?</h1>
+  <div class="row">
+      <div class="image">
+        <img src="about_1.jpg" alt="">
+      </div>
+      <div class="content">
+        <h3>Best for in the country</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Maxime quisquam, totam ipsa tempore autem iusto architecto harum expedita, 
+          molestiae commodi a perferendis accusantium excepturi ullam. 
+          Vel sunt sequi placeat optio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Maxime quisquam, totam ipsa tempore autem iusto architecto harum expedita, 
+          molestiae commodi a perferendis</p>
+          <div class="icons-container">
+              <div class="icons">
+                <i class="fas fa-shipping-fast"></i>
+                <span>free delivery</span>
+              </div>
+              <div class="icons">
+                <i class="fas fa-dollar-sign"></i>
+                <span>easy payment</span>
+              </div>
+              <div class="icons">
+                <i class="fas fa-headset"></i>
+                <span>24/7 service</span>
+              </div>
+          </div>
+          <a href="#" class="btn">learn more</a>
+
+      </div>
+  </div>
+
+</section>
+<!--about section ends-->
+
+<!--footer section start-->
+<section class="footer">
+
+  <div class="box-container">
+        <div class="box">
+              <h3>locations</h3>
+              <a href="#">india</a>
+              <a href="#">india</a>
+              <a href="#">india</a>
+              <a href="#">india</a>
+              <a href="#">india</a>
+        </div>
+
+        <div class="box">
+              <h3>quick links</h3>
+              <a href="#">home</a>
+              <a href="#">about us</a>
+              <a href="#">contact us</a>
+              <a href="#">our location</a>
+              <a href="#">reviews</a>
+        </div>
+
+        <div class="box">
+              <h3>contact info</h3>
+              <a href="#">88888888888</a>
+              <a href="#">99999999999</a>
+              <a href="#">@yahoo.com</a>
+              <a href="#">@yahoo.com</a>
+              <a href="#">intramuros philippines</a>
+
+        </div>
+
+        <div class="box">
+              <h3>follow us</h3>
+              <a href="#">facebook</a>
+              <a href="#">instagram</a>
+              <a href="#">twitter</a>
+              <a href="#">snapchat</a>
+              <a href="#">tiktok</a>
+
+        </div>
+  </div>
+  <div class="credit">copyright @ 2024 by<span>Palestine designer</span></div>
+</section>
+<!--footer section ends-->
+
+<!--Custom JS Link-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="aboutus.js"></script>
+
 </body>
 </html>
