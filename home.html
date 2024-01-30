@@ -23,16 +23,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
-<!--Header Design-->
-<header class="sticky">
-  <div class="web-logo">
-    <a href="home.html" class="pic_logo">
-      <img src="background_logo2.png">
-    <a href="home.html" class="logo">Gia's<span>Kitchnette</span></a>
-  </a> 
-  <ul class="navbar">
-  </div>
-  <nav>
+<!--Header Design start-->
+<header>
+    <a href="home.html" class="logo"><img src="background_logo2.png" class="pic-logo">Gia's<span>Kitchnette</span></a>
+  <nav class="navbar">
     <ul>
       <li class="dropdown">
         <button>About ▼</button>
@@ -63,17 +57,25 @@
             </div>
           </li>
       </ul>
-    </ul>
   </nav>
-  <div class="h-right">
+  <div class="icons">
     <a href="#"></a>
-    <a href="#"><i class="ri-search-line"></i></a>
+    <a href="#"><i class="fas fa-search" id="search-icon"></i></a>
     <a href="#"><i class="ri-facebook-fill"></i></a>
     <a href="#"><i class="ri-instagram-line"></i></a>
     <a href="#"><i class="ri-twitter-line"></i></a>
-    <div class="bx bx-menu" id="menu_1-icon"></div>
+    <a href="#"><i class="fas fa-bars" id="menu-bars"></i></a>
 </div>
 </header>
+<!--Header Design end-->
+
+<!--search form starts-->
+<form action="" id="search-form">
+  <input type="search" placeholder="search here..." name="" id="search-box">
+  <label for="search-box" class="ri-search-line"></label>
+  <i class="fas fa-times" id="close"></i>
+</form>
+<!--search form ends-->
 
 <!--home section starts-->
 <section class="home" id="home">

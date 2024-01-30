@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap);
+
 *{
   padding: 0;
   margin: 0;
@@ -81,14 +83,63 @@ section:nth-child(even){
   transform: scale(1.02);
 }
 
+#search-form{
+  position: fixed;
+  top: -110%; left: 0;
+  height: 100%; width: 100%;
+  z-index: 1004;
+  background: rgba(0, 0, 0,.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+#search-form.active{
+  top: 0;
+}
+
+#search-form #search-box{
+  width: 50rem;
+  border-bottom: .1rem solid #fff;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: none;
+  background: none;
+}
+
+#search-form #search-box::placeholder{
+  color: #eee;
+}
+
+#search-form #search-box::-webkit-search-cancel-button{
+  -webkit-appearance: none;
+}
+
+#search-form label{
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem
+}
+
+#search-form label:hover{
+  color: var(--green);
+}
+
+#search-form #close{
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  top: 2rem; right: 3rem;
+  font-size: 5rem;
+}
+
 header{
   position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  width: 100%;
+  top: 0; left:0; right: 0;
   background: linear-gradient(to left, #f8dcef,#f7e4db);
-  padding: 27px 17%;
+  padding: 1rem 7%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,45 +148,32 @@ header{
   box-shadow: var(--box-shadow);
 }
 
-.pic_logo {
-  position: absolute;
-  margin: 5px;
-  top: 10%; left: 11%;
-
-  z-index: 1;
-}
-
-.pic_logo img {
-  max-width: 100px; 
-  transition: all .50s ease;
-  border: #000 3px solid;
+header a img{
+  height: 7rem;
+  width: 7rem;
   border-radius: 50%;
-  filter: brightness(90%);
-  transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  will-change: filter;
-  display: block;
+  border: .1rem solid rgba(0, 0, 0, .2);
+  align-self: center;
 }
 
-.pic_logo img:hover{
+header a img:hover{
   filter: brightness(100%);
   transform: scale(1.1);
   cursor: pointer;
 }
 
-.logo {
+header .logo {
   font-size: 3.5rem;
   font-weight: bolder;
-  font-style: italic;
   color: var(--text-color);
-  margin: 5px;
+
 }
 
-.logo span {
+header .logo span {
   color: var(--main-color);
-
 }
 
-nav ul{
+.navbar ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -143,15 +181,15 @@ nav ul{
   align-items: center;
 }
 
-nav li {
+.navbar li {
   margin-right: 45px;
 }
 
-nav li:last-child {
+.navbar li:last-child {
   margin-right: 1;
 }
 
-nav li a {
+.navbar li a {
   color: black; 
   text-decoration: none;
   font-size: 16px;
@@ -159,16 +197,16 @@ nav li a {
   font-family: 'Open Sans', sans-serif;
 
 }
-.nav a:hover{
+.navbar a:hover{
   background-color:  #f6d4b6;
 }
 
-.dropdown{
+.navbar .dropdown{
   display: inline-block;
   
 }
 
-.dropdown button{
+.navbar .dropdown button{
   display: inline-block;
   color: var(--text-color);
   background: #fad0c1;
@@ -181,7 +219,7 @@ nav li a {
   cursor: pointer;
 }
 
-.dropdown a{
+.navbar .dropdown a{
   display: block;
   color: var(--p-font);
   text-decoration: none;
@@ -190,7 +228,7 @@ nav li a {
   transition: all 0.50s ease;
   font-family: 'Open Sans', sans-serif;
 }
-.dropdown .content-1{
+.navbar .dropdown .content-1{
   position: absolute;
   background-color: #ffffff;
   font-size: 12px;
@@ -202,35 +240,35 @@ nav li a {
   transition: all 0.50s ease;
 }
 
-.dropdown:hover .content-1{
+.navbar .dropdown:hover .content-1{
   display: block;
 }
 
-.dropdown:hover button {
+.navbar .dropdown:hover button {
   transform: translateY(-5px);
   border: 2px solid var(--text-color);
   background: transparent;
   color: var(--text-color);
 }
 
-.dropdown a:hover{
+.navbar .dropdown a:hover{
   transform: translateY(-3px);
   background:  #fad0c1;
   border-radius: 10px;
 }
 
-.h-right {
+header .icons {
   display: flex;
   align-items: center;
 }
 
-.h-right a:first-child {
+header .icons a:first-child {
   color: var(--text-color);
   font-size: var(--p-font);
   margin-right: 20px;
 }
 
-.h-right a {
+header .icons a {
   vertical-align: middle;
   font-size: 2rem;
   font-weight: 500;
@@ -242,7 +280,7 @@ nav li a {
   transition: all .75s ease;
 }
 
-.h-right a:hover {
+header .icons a:hover {
   border-color: #000;
   transform: translateY(-5px);
   border: 2px solid var(--text-color);
@@ -250,11 +288,7 @@ nav li a {
   background: #fad0c1;
 }
 
-#menu_1-icon {
-  color: #FFB6C1;
-  font-size: 30px;
-  cursor: pointer;
-  z-index: 10001;
+header .icons #menu-bars{
   display: none;
 }
 
