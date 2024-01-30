@@ -14,15 +14,51 @@
   --text-color: #000;
   --bg-color: #fff;
   --main-color: #FFB6C1;
+  --green:#27ae60;
+  --black:#192a56;
+  --light_color:#666;
+  --box-shadow:0.5rem 1.5rem rgba(0,0,0,.1)
+
 
   --h1-font: 6rem;
   --h2-font: 3rem;
   --p-font: 1rem;
 }
 
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--text-color);
   background: var(--bg-color);
+}
+
+section{
+  padding: 2rem 9%;
+}
+
+section:nth-child(even){
+  background: #eee;
+}
+
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--black);
+  border-radius: .5rem;
+  cursor: pointer;
+  padding: .8rem 3rem;
+}
+
+.btn:hover{
+  background: var(--green);
+  letter-spacing: .1rem;
 }
 
 header{
@@ -198,4 +234,50 @@ nav li a {
   cursor: pointer;
   z-index: 10001;
   display: none;
+}
+
+.home .home-slider .slide{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 9rem;
+}
+
+.home .home-slider .slide .content{
+  flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image{
+  flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image img{
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+
+}
+
+.home .home-slider .slide .content span{
+  color: var(--green);
+  font-size: 2.5rem;
+}
+
+.home .home-slider .slide .content h3{
+  color: var(--black);
+  font-size: 7rem;
+}
+
+.home .home-slider .slide .content p{
+  color: var(--light_color);
+  font-size: 2.2rem;
+  padding: .5rem 0;
+  line-height: 1.5;
+}
+
+.swiper-pagination-buttet-active{
+  background: var;
 }
