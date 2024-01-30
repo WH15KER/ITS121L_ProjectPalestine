@@ -18,7 +18,8 @@
   --green:#27ae60;
   --black:#192a56;
   --light_color:#666;
-  --box-shadow:0.5rem 1.5rem rgba(0,0,0,.1)
+  --box-shadow:0.5rem 1.5rem rgba(0,0,0,.1);
+  --pink: #f7e4db;
 
 
   --h1-font: 6rem;
@@ -39,10 +40,7 @@ body {
 }
 
 section{
-  padding-left: 20rem; 
-  padding-right: 20rem;
-  padding-top: 3rem;
-  padding-bottom: 10rem;
+ padding: 10rem;
 }
 
 section:nth-child(even){
@@ -252,7 +250,7 @@ nav li a {
   background: #fad0c1;
 }
 
-#menu-icon {
+#menu_1-icon {
   color: #FFB6C1;
   font-size: 30px;
   cursor: pointer;
@@ -400,9 +398,216 @@ nav li a {
   font-size: 2.5rem;
 }
 
+.about .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
 
+.about .row .image{
+  flex:1 1 45rem
+}
 
+.about .row .image img{
+  width: 100%;
+  border-radius: 25%;
+}
 
+.about .row .content{
+  flex:1 1 45rem
+}
+
+.about .row .content h3{
+  color: var(--black);
+  font-size: 4rem;
+  padding: .5rem 0;
+}
+
+.about .row .content p{
+  color: var(--light_color);
+  font-size: 1.5rem;
+  padding: .5rem 0;
+  line-height: 2;
+}
+
+.about .row .content .icons-container{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  margin: .5rem;
+}
+
+.about .row .content .icons-container .icons{
+  background:#eee;
+  border-radius: .5rem;
+  border:.1rem solid rgba(0, 0, 0, .2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex:1 1 17rem;
+  padding: 1.5rem 1rem;
+}
+
+.about .row .content .icons-container .icons:hover{
+  background: #a39a9a;
+  cursor: pointer;
+  transition: all .50s ease;
+  transform: scale(1.05);
+  font-weight: bold;
+  color: var(--pink);
+}
+
+.about .row .content .icons-container .icons i{
+  font-size: 2.5rem;
+  color: var(--green);
+}
+
+.about .row .content .icons-container .icons span{
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.menu .box-container .box{
+  padding: 4.5rem;
+  background-color: #fff;
+  border-radius: 5rem;
+  border: .1rem solid rgba(0, 0, 0, .2);
+  box-shadow: 3px 3px 6px rgb(136, 124, 124);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.menu .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  gap: 9rem;
+}
+
+.menu .box-container .box .image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu .box-container .box .image img{
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 25%;
+}
+
+.menu .box-container .box .fa-heart{
+  position: absolute;
+  top: 2.5rem; right: 2.5rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  background: #fff;
+  border-radius: 50%;
+  color: var(--black);
+}
+
+.menu .box-container .box .fa-heart:hover{
+  background-color: var(--pink);
+  color: #fff;
+}
+
+.menu .box-container .box .content{
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.menu .box-container .box .content .stars{
+  padding-bottom: 1rem;
+}
+
+.menu .box-container .box .content .stars i{
+  font-size: 1.7rem;
+  color: var(--green);
+}
+
+.menu .box-container .box .content h3{
+  color:var(--black);
+  font-size: 2.5rem;
+}
+
+.menu .box-container .box .content p{
+  color:var(--light_color);
+  font-size: 1.7rem;
+  padding: .5rem 0;
+  line-height: 1.5;
+}
+
+.menu .box-container .box .content p:hover{
+ 
+  transform: scale(1.1);
+  transition: all .50s ease
+}
+
+.menu .box-container .box .content .price{
+  color: var(--green);
+  margin-left: 1rem;
+  font-size: 2.5rem;
+}
+
+.review .slide{
+  padding: 3rem;
+  box-shadow: var(--box-shadow);
+  border: .1rem solid rgba(0, 0, 0, .2);
+  border-radius: 5rem;
+  position: relative;
+}
+
+.review .slide:hover{
+  transform: scale(1.25);
+  transition: all .50s ease;
+}
+
+.review .slide .fa-quote-right{
+  position: absolute;
+  top: 2rem; right: 2rem;
+  font-size: 6rem;
+  color: #ccc;
+}
+
+.review .slide .user{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.review .slide .user img{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.review .slide .user h3{
+  color: var(--black);
+  font-size: 2rem;
+  padding-bottom: .5rem;
+}
+
+.review .slide .user i{
+  color: var(--green);
+  font-size: 1.3rem;
+}
+
+.review .slide p{
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--light_color);
+}
 
 
 
