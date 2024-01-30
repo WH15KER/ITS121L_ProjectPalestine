@@ -74,23 +74,18 @@
 <p>Address: Jose Abad Santos Ave, Lubao, Central Luzon</p>
 <p>Phone: 0945 723 9463</p>
 <p>Hours: 2:00PM - 10:00 PM</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h1>Send us a message</h1>
+<form action="submit-form.php" method="post">
+      <fieldset>
+        <label for="nBox">Name</label>
+        <input type="text" id="nBox" name="Name" required />
+        <label for="Mail">Email</label>
+        <input type="text" id="Mail" name="Email" required />
+        <label for="Message">Message (optional)</label>
+        <input type="textarea" id="Message" name="Name" placeholder="Is there anything you want to specify" />
+      </fieldset>
+    <input type="submitbutton" value="Send" />
+</form>
 
 </body>
 </html>
