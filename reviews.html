@@ -3,9 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gia's Kitchnette</title>
 
+  <!--Custom js links-->
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!--Custom css links-->
   <link rel="stylesheet" type="text/css" href="reviews.css">
     
@@ -18,107 +22,248 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
-<body class="is-preload">
-
-<div id="wrapper">
-
-<!--Header Design-->
-  <header class="sticky">
-    <div class="web-logo">
-      <a href="home.html" class="pic_logo" src="background_logo2.png">
-        <img src="background_logo2.png">
-      <a href="home.html" class="logo">Gia's<span>Kitchnette</span></a>
-    </a> 
-    <ul class="navbar">
-    </div>
-    <nav>
-      <ul>
+<body>
+<!--Header Design start-->
+<header>
+    <a href="home.html" class="logo"><img src="background_logo2.png" class="pic-logo">Gia's<span>Kitchnette</span></a>
+  <nav class="navbar">
+    <ul>
+      <li class="dropdown">
+        <button>About ▼</button>
+        <div class="content-1">
+          <a href="aboutus.html">About Us</a>
+          <a href="location.html">Our Location</a>
+          <a href="reviews.html">Reviews</a>
+          </div>
+          </li>
         <li class="dropdown">
-          <button>About ▼</button>
-          <div class="content-1">
-            <a href="aboutus.html">About Us</a>
-            <a href="location.html">Our Location</a>
-            <a href="reviews.html">Reviews</a>
+          <button>Menu ▼</button>
+            <div class="content-1">
+            <a href="foods.html">Food</a>
+            <a href="drinks.html">Drinks</a>
             </div>
-            </li>
-          <li class="dropdown">
-            <button>Menu ▼</button>
-              <div class="content-1">
-              <a href="food.html">Food</a>
-              <a href="drinks.html">Drinks</a>
-              </div>
-            </li>
-        <li class="dropdown">
-          <button>Delivery ▼</button>
-          <div class="content-1">
-              <a href="https://food.grab.com/ph/en/">Grabfood</a>
-              <a href="https://www.foodpanda.ph/">Foodpanda</a>
-              </div>
-            </li>
-        <li class="dropdown">
-          <button>Contact ▼</button>
-          <div class="content-1">
-              <a href="contactus.html">Contact Us</a>
-              </div>
-            </li>
-        </ul>
-    </nav>
-      <div class="h-right">
-      <a href="#">Follow Us</a>
-      <a href="#"><i class="ri-facebook-fill"></i></a>
-      <a href="#"><i class="ri-instagram-line"></i></a>
-      <a href="#"><i class="ri-twitter-line"></i></a>
-      <div class="bx bx-menu" id="menu-icon"></div>
-  </div>
+          </li>
+      <li class="dropdown">
+        <button>Delivery ▼</button>
+        <div class="content-1">
+            <a href="https://food.grab.com/ph/en/">Grabfood</a>
+            <a href="https://www.foodpanda.ph/">Foodpanda</a>
+            </div>
+          </li>
+      <li class="dropdown">
+        <button>Contact ▼</button>
+        <div class="content-1">
+            <a href="contactus.html">Contact Us</a>
+            </div>
+          </li>
+      </ul>
+  </nav>
+  <div class="icons">
+    <a href="#"></a>
+    <a href="#"><i class="fas fa-search" id="search-icon"></i></a>
+    <a href="#"><i class="ri-facebook-fill"></i></a>
+    <a href="#"><i class="ri-instagram-line"></i></a>
+    <a href="#"><i class="ri-twitter-line"></i></a>
+    <a href="#"><i class="fas fa-bars" id="menu-bars"></i></a>
 </div>
 </header>
+<!--Header Design end-->
 
-<!--Home Design-->
-<section class="home">
-    <div class="home-text">
-      <h5>Let's</h5>
-      <h1>Planning your <br> own travel</h1>
-      <p>Philippines, a Southeast Asia nation made up of 
-      a thousand islands <br> is home to hundreds of ethnic
-      groups speaking</p>
-    </div>
-  </section>
+<!--search form starts-->
+<form action="" id="search-form">
+  <input type="search" placeholder="search here..." name="" id="search-box">
+  <label for="search-box" class="ri-search-line"></label>
+  <i class="fas fa-times" id="close"></i>
+</form>
+<!--search form ends-->
 
-  <!--review section-->
-  <section class="reviewpage" id="review">
-      <h3 class="sub-heading">customer's review</h3>
-      <h1 class="heading">what they say</h1>
 
-      <div class="review-slider">
-        <div class="wrapper_1">
-          <div class="slide_1">
-            <i class="fas fa-quote-right"></i>
-            <div class="user_1">
-              <img src="#" alt="">
-              <div class="user-info">
-                <h3>John Mark</h3>
-                <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-              </div>
+
+<!--review section starts-->
+<section class="review" id="review">
+  <h3 class="sub-heading">customer's review</h3>
+  <h1 class="heading">what there say</h1>
+            <div class=" review-slider">
+
+                <div class="wrapper">
+
+                    <div class="slide">
+
+                      <i class="fas fa-quote-right"></i>
+                      <div class="user-info">
+                        <div class="user">
+                            <img src="#" alt="">
+                            <div class="user-info">
+                                <h3>john deo</h3>
+                                <div class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Est, totam pariatur, ipsa assumenda et, ad aliquid eius veritatis 
+                          nemo ipsam a consequatur explicabo quia dolores laborum incidunt 
+                          repellendus quasi sapiente unde veniam?</p>
+                    </div>
+                    </div>
+
+                    <div class="slide">
+
+                      <i class="fas fa-quote-right"></i>
+                      <div class="user-info">
+                        <div class="user">
+                            <img src="#" alt="">
+                            <div class="user-info">
+                                <h3>john deo</h3>
+                                <div class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Est, totam pariatur, ipsa assumenda et, ad aliquid eius veritatis 
+                          nemo ipsam a consequatur explicabo quia dolores laborum incidunt 
+                          repellendus quasi sapiente unde veniam?</p>
+                    </div>
+                    </div>
+
+                    <div class="slide">
+
+                      <i class="fas fa-quote-right"></i>
+                      <div class="user-info">
+                        <div class="user">
+                            <img src="#" alt="">
+                            <div class="user-info">
+                                <h3>john deo</h3>
+                                <div class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Est, totam pariatur, ipsa assumenda et, ad aliquid eius veritatis 
+                          nemo ipsam a consequatur explicabo quia dolores laborum incidunt 
+                          repellendus quasi sapiente unde veniam?</p>
+                    </div>
+                    </div>
+
+                    <div class="slide">
+
+                      <i class="fas fa-quote-right"></i>
+                      <div class="user-info">
+                        <div class="user">
+                            <img src="#" alt="">
+                            <div class="user-info">
+                                <h3>john deo</h3>
+                                <div class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Est, totam pariatur, ipsa assumenda et, ad aliquid eius veritatis 
+                          nemo ipsam a consequatur explicabo quia dolores laborum incidunt 
+                          repellendus quasi sapiente unde veniam?</p>
+                    </div>
+                    </div>
+
+                    <div class="slide">
+
+                      <i class="fas fa-quote-right"></i>
+                      <div class="user-info">
+                        <div class="user">
+                            <img src="#" alt="">
+                            <div class="user-info">
+                                <h3>john deo</h3>
+                                <div class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Est, totam pariatur, ipsa assumenda et, ad aliquid eius veritatis 
+                          nemo ipsam a consequatur explicabo quia dolores laborum incidunt 
+                          repellendus quasi sapiente unde veniam?</p>
+                    </div>
+                    </div>
+
             </div>
-            <p> The food Is Great!!! The food Is Great!!! The food Is Great!!! 
-              The food Is Great!!! The food Is Great!!! The food Is Great!!! 
-              The food Is Great!!! The food Is Great!!! The food Is Great!!! 
-              The food Is Great!!! The food Is Great!!! The food Is Great!!! 
-              The food Is Great!!! The food Is Great!!! The food Is Great!!! 
-              The food Is Great!!! The food Is Great!!! The food Is Great!!! 
-              The food Is Great!!! The food Is Great!!! The food Is Great!!! 
-              The food Is Great!!! The food Is Great!!! The food Is Great!!! 
-              The food Is Great!!! The food Is Great!!! The food Is Great!!! </p>
-          </div>
         </div>
-      </div>
-  </section>
+</section>
+<!--review section ends-->
+
+<section class="footer">
+
+  <div class="box-container">
+        <div class="box">
+              <h3>locations</h3>
+              <a href="#">india</a>
+              <a href="#">india</a>
+              <a href="#">india</a>
+              <a href="#">india</a>
+              <a href="#">india</a>
+        </div>
+
+        <div class="box">
+              <h3>quick links</h3>
+              <a href="home.html">home</a>
+              <a href="aboutus.html">about us</a>
+              <a href="contactus.html">contact us</a>
+              <a href="location.html">our location</a>
+              <a href="reviews.html">reviews</a>
+        </div>
+
+        <div class="box">
+              <h3>contact info</h3>
+              <a href="#">0945 723 9463</a>
+              <a href="#">99999999999</a>
+              <a href="#">@yahoo.com</a>
+              <a href="#">@yahoo.com</a>
+              <a href="#">intramuros philippines</a>
+
+        </div>
+
+        <div class="box">
+              <h3>follow us</h3>
+              <a href="https://www.facebook.com/profile.php?id=100083321291974">facebook</a>
+              <a href="#">instagram</a>
+              <a href="#">twitter</a>
+              <a href="#">snapchat</a>
+              <a href="#">tiktok</a>
+
+        </div>
+  </div>
+  <div class="credit">copyright @ 2024 by<span>Palestine designer</span></div>
+</section>
+<!--footer section ends-->
+
+<!--Custom JS Link-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="reviews.js"></script>
+
+
+</body>
+</html>
 
 
 
