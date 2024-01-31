@@ -447,6 +447,7 @@ header .icons #menu-bars{
 .about .row .image img{
   width: 100%;
   border-radius: 25%;
+ border: 1rem solid var(--green);
 }
 
 .about .row .content{
@@ -464,6 +465,13 @@ header .icons #menu-bars{
   font-size: 1.5rem;
   padding: .5rem 0;
   line-height: 2;
+}
+
+.about .row .content p:hover{
+  background: #52b97d;
+  font-weight: bolder;
+  color: #eee;
+  transform: scale(1.1);
 }
 
 .about .row .content .icons-container{
