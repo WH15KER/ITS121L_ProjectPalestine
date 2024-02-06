@@ -153,7 +153,7 @@ header a img{
   width: 7rem;
   border-radius: 50%;
   border: .1rem solid rgba(0, 0, 0, .2);
-  align-self: center;
+  z-index: -1;
 }
 
 header a img:hover{
