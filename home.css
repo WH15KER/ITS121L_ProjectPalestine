@@ -38,7 +38,7 @@ html{
 
 body {
   color: var(--text-color);
-  background: var(--bg-color);
+  background: linear-gradient(to bottom, #f8dcef, #77dd77)
 }
 
 section{
@@ -145,7 +145,7 @@ header{
   justify-content: space-between;
   transition: all .50s ease;
   z-index: 1000;
-  box-shadow: var(--box-shadow);
+  box-shadow:0.2rem .75rem rgba(0,0,0,.1);
 }
 
 header a img{
@@ -597,6 +597,7 @@ header .icons #menu-bars{
   border: .1rem solid rgba(0, 0, 0, .2);
   border-radius: 5rem;
   position: relative;
+  background: #eee;
 }
 
 .review .slide:hover{
@@ -684,7 +685,7 @@ header .icons #menu-bars{
 
 .order form .inputBox .input input:focus,
 .order form .inputBox .input textarea:focus{
-  border: 1rem solid var(--green);
+  border: .1rem solid var(--green);
 }
 
 .order form .inputBox .input textarea{

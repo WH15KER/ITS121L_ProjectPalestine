@@ -38,7 +38,7 @@ html{
 
 body {
   color: var(--text-color);
-  background: var(--bg-color);
+  background: linear-gradient(to bottom, #f8dcef, #77dd77)
 }
 
 section{
@@ -145,7 +145,7 @@ header{
   justify-content: space-between;
   transition: all .50s ease;
   z-index: 1000;
-  box-shadow: var(--box-shadow);
+  box-shadow:0.2rem .75rem rgba(0,0,0,.1);
 }
 
 header a img{

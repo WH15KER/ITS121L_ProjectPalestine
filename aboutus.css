@@ -38,7 +38,7 @@ html{
 
 body {
   color: var(--text-color);
-  background: var(--bg-color);
+  background: linear-gradient(to bottom, #f8dcef, #77dd77)
 }
 
 section{
@@ -147,7 +147,7 @@ header{
   justify-content: space-between;
   transition: all .50s ease;
   z-index: 1000;
-  box-shadow: var(--box-shadow);
+  box-shadow:0.2rem .75rem rgba(0,0,0,.1);
 }
 
 header a img{
@@ -308,6 +308,7 @@ header .icons #menu-bars{
 .about .row .image img{
   width: 100%;
   border-radius: 25%;
+  border: .5rem solid #192a56;
 }
 
 .about .row .content{
@@ -336,7 +337,7 @@ header .icons #menu-bars{
 }
 
 .about .row .content .icons-container .icons{
-  background:#eee;
+  background: #fad0c1;
   border-radius: .5rem;
   border:.1rem solid rgba(0, 0, 0, .2);
   display: flex;
@@ -348,12 +349,11 @@ header .icons #menu-bars{
 }
 
 .about .row .content .icons-container .icons:hover{
-  background: #a39a9a;
+  background: transparent;
   cursor: pointer;
   transition: all .50s ease;
   transform: scale(1.05);
   font-weight: bold;
-  color: var(--pink);
 }
 
 .about .row .content .icons-container .icons i{
